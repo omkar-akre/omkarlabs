@@ -9,7 +9,7 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Omkar Labs Google Cloud Platform learning lab - GCP, Cloud Run, IAM, Docker, Cloudflare and DevOps.">
+          content="Omkar Labs GCP learning lab - Google Cloud, Cloud Run, IAM, networking, containers and cloud infrastructure.">
 
     <title>GCP | Omkar Labs</title>
 
@@ -84,6 +84,7 @@
     </header>
 
 
+
     <!-- ================= MAIN ================= -->
 
     <main>
@@ -102,27 +103,30 @@
                         GOOGLE CLOUD PLATFORM
                     </p>
 
+
                     <h1>
-                        Build in the<br>
-                        <span>Cloud.</span>
+                        Build in<br>
+                        the <span>Cloud.</span>
                     </h1>
+
 
                     <p class="hero-description">
 
                         My hands-on Google Cloud learning
                         environment where I experiment with
                         Cloud Run, containers, IAM, networking,
-                        deployment and cloud infrastructure.
+                        monitoring and cloud infrastructure.
 
                     </p>
 
 
                     <div class="hero-buttons">
 
-                        <a href="#labs"
+                        <a href="#cloud-run"
                            class="btn btn-primary">
-                            Explore GCP Labs
+                            Explore Cloud Run
                         </a>
+
 
                         <a href="projects.html"
                            class="btn btn-secondary">
@@ -132,6 +136,7 @@
                     </div>
 
                 </div>
+
 
 
                 <!-- TERMINAL -->
@@ -145,7 +150,7 @@
                         <span class="terminal-dot"></span>
 
                         <span class="terminal-title">
-                            omkar@gcp:~
+                            omkar@labs:~/gcp
                         </span>
 
                     </div>
@@ -154,43 +159,67 @@
                     <div class="terminal-body">
 
                         <p>
+
                             <span class="terminal-prompt">
                                 $
                             </span>
-                            gcloud config get project
+
+                            gcloud config get-value project
+
                         </p>
 
+
                         <p class="terminal-output">
+
                             testing
+
                         </p>
 
+
                         <p>
+
                             <span class="terminal-prompt">
                                 $
                             </span>
+
                             gcloud run services list
+
                         </p>
+
 
                         <p class="terminal-output">
+
                             omkarlabs
+
                         </p>
 
+
                         <p>
+
                             <span class="terminal-prompt">
                                 $
                             </span>
+
                             gcloud run services describe omkarlabs
+
                         </p>
+
 
                         <p class="terminal-success">
-                            ● SERVICE RUNNING
+
+                            ● Cloud Run service active
+
                         </p>
 
+
                         <p>
+
                             <span class="terminal-prompt">
                                 $
                             </span>
+
                             _
+
                         </p>
 
                     </div>
@@ -202,7 +231,8 @@
         </section>
 
 
-        <!-- ================= OVERVIEW ================= -->
+
+        <!-- ================= GCP OVERVIEW ================= -->
 
         <section class="technologies">
 
@@ -212,42 +242,75 @@
                 <div class="section-heading">
 
                     <p class="eyebrow">
-                        GCP LEARNING LAB
+                        GCP LAB
                     </p>
+
 
                     <h2>
                         What I'm Learning
                     </h2>
 
+
                     <p>
-                        Building practical cloud infrastructure
-                        instead of learning GCP only through theory.
+
+                        Building practical knowledge of
+                        Google Cloud by deploying and
+                        managing real services.
+
                     </p>
 
                 </div>
 
 
+
                 <div class="tech-grid">
 
 
-                    <article class="tech-card">
+                    <!-- CLOUD RUN -->
+
+                    <article class="tech-card"
+                             id="cloud-run">
 
                         <div class="tech-icon">
                             ☁️
                         </div>
 
+
+                        <span class="project-label">
+                            ACTIVE
+                        </span>
+
+
                         <h3>
                             Cloud Run
                         </h3>
 
+
                         <p>
-                            Deploying containerized web
-                            applications using a serverless
+
+                            Running containerized web
+                            applications using Google's
+                            fully managed serverless
                             container platform.
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>
+                                Lab:
+                            </strong>
+
+                            Omkar Labs website
+
                         </p>
 
                     </article>
 
+
+
+                    <!-- IAM -->
 
                     <article class="tech-card">
 
@@ -255,36 +318,125 @@
                             🔐
                         </div>
 
+
+                        <span class="project-label">
+                            LEARNING
+                        </span>
+
+
                         <h3>
                             IAM
                         </h3>
 
+
                         <p>
-                            Learning users, roles, permissions,
-                            service accounts and least-privilege
-                            access.
+
+                            Understanding users, roles,
+                            service accounts and least
+                            privilege access.
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>
+                                Focus:
+                            </strong>
+
+                            Secure cloud access
+
                         </p>
 
                     </article>
 
+
+
+                    <!-- COMPUTE -->
 
                     <article class="tech-card">
 
                         <div class="tech-icon">
-                            🐳
+                            🖥️
                         </div>
 
+
+                        <span class="project-label">
+                            PLANNED
+                        </span>
+
+
                         <h3>
-                            Containers
+                            Compute Engine
                         </h3>
 
+
                         <p>
-                            Building Docker images and deploying
-                            them as Cloud Run revisions.
+
+                            Learning how virtual machines
+                            work and how to manage Linux
+                            infrastructure in GCP.
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>
+                                Focus:
+                            </strong>
+
+                            VM · Linux · Networking
+
                         </p>
 
                     </article>
 
+
+
+                    <!-- STORAGE -->
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            🗄️
+                        </div>
+
+
+                        <span class="project-label">
+                            PLANNED
+                        </span>
+
+
+                        <h3>
+                            Cloud Storage
+                        </h3>
+
+
+                        <p>
+
+                            Exploring object storage,
+                            buckets, permissions and
+                            lifecycle management.
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>
+                                Focus:
+                            </strong>
+
+                            Storage · IAM · Security
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- NETWORKING -->
 
                     <article class="tech-card">
 
@@ -292,17 +444,41 @@
                             🌐
                         </div>
 
+
+                        <span class="project-label">
+                            LEARNING
+                        </span>
+
+
                         <h3>
                             Networking
                         </h3>
 
+
                         <p>
-                            Understanding ingress, domains,
-                            DNS, Cloudflare and cloud networking.
+
+                            Understanding VPC networks,
+                            subnets, firewall rules,
+                            DNS and traffic flow.
+
+                        </p>
+
+
+                        <p>
+
+                            <strong>
+                                Focus:
+                            </strong>
+
+                            VPC · DNS · Firewall
+
                         </p>
 
                     </article>
 
+
+
+                    <!-- MONITORING -->
 
                     <article class="tech-card">
 
@@ -310,31 +486,34 @@
                             📊
                         </div>
 
+
+                        <span class="project-label">
+                            PLANNED
+                        </span>
+
+
                         <h3>
                             Monitoring
                         </h3>
 
+
                         <p>
-                            Learning logs, revisions, service
-                            health and troubleshooting.
+
+                            Learning Cloud Monitoring,
+                            logging, metrics and
+                            troubleshooting.
+
                         </p>
 
-                    </article>
-
-
-                    <article class="tech-card">
-
-                        <div class="tech-icon">
-                            ⚙️
-                        </div>
-
-                        <h3>
-                            Automation
-                        </h3>
 
                         <p>
-                            Moving toward GitHub Actions,
-                            CI/CD and Infrastructure as Code.
+
+                            <strong>
+                                Focus:
+                            </strong>
+
+                            Logs · Metrics · Alerts
+
                         </p>
 
                     </article>
@@ -346,7 +525,8 @@
         </section>
 
 
-        <!-- ================= ARCHITECTURE ================= -->
+
+        <!-- ================= CLOUD RUN PROJECT ================= -->
 
         <section class="projects-preview">
 
@@ -356,19 +536,24 @@
                 <div class="section-heading">
 
                     <p class="eyebrow">
-                        CURRENT ARCHITECTURE
+                        REAL-WORLD PROJECT
                     </p>
 
+
                     <h2>
-                        Omkar Labs Cloud Platform
+                        Omkar Labs on Cloud Run
                     </h2>
 
+
                     <p>
-                        The website itself is becoming the first
-                        real-world DevOps project.
+
+                        The website itself is being used
+                        as the first practical GCP project.
+
                     </p>
 
                 </div>
+
 
 
                 <div class="project-feature">
@@ -377,29 +562,34 @@
                     <div>
 
                         <span class="project-label">
-                            ARCHITECTURE
+                            PROJECT #001
                         </span>
 
+
                         <h3>
-                            GitHub → Docker → Cloud Run
+                            Container → Cloud Run
                         </h3>
+
 
                         <p>
 
-                            Source code is maintained in GitHub.
-                            The application is containerized with
-                            Docker and deployed to Google Cloud Run.
+                            The Omkar Labs website is
+                            containerized using Docker
+                            and deployed to Google Cloud Run.
 
                         </p>
 
+
                         <p>
 
-                            Cloudflare handles the public DNS
-                            layer for the Omkar Labs domain.
+                            The public domain is managed
+                            through Cloudflare while the
+                            application runs on Google Cloud.
 
                         </p>
 
                     </div>
+
 
 
                     <div class="project-flow">
@@ -449,289 +639,8 @@
         </section>
 
 
-        <!-- ================= LABS ================= -->
 
-        <section class="technologies"
-                 id="labs">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        HANDS-ON LABS
-                    </p>
-
-                    <h2>
-                        GCP Labs
-                    </h2>
-
-                    <p>
-                        Practical exercises that will become
-                        part of the Omkar Labs learning portfolio.
-                    </p>
-
-                </div>
-
-
-                <div class="tech-grid">
-
-
-                    <!-- LAB 01 -->
-
-                    <article class="tech-card">
-
-                        <span class="project-label">
-                            COMPLETED
-                        </span>
-
-                        <div class="tech-icon">
-                            🚀
-                        </div>
-
-                        <h3>
-                            Deploy Cloud Run
-                        </h3>
-
-                        <p>
-
-                            Deploy a Dockerized website to
-                            Google Cloud Run and expose it
-                            through a public HTTPS endpoint.
-
-                        </p>
-
-                    </article>
-
-
-                    <!-- LAB 02 -->
-
-                    <article class="tech-card">
-
-                        <span class="project-label">
-                            COMPLETED
-                        </span>
-
-                        <div class="tech-icon">
-                            🌐
-                        </div>
-
-                        <h3>
-                            Custom Domain
-                        </h3>
-
-                        <p>
-
-                            Connect the Omkar Labs domain
-                            with the cloud-hosted application
-                            and configure DNS.
-
-                        </p>
-
-                    </article>
-
-
-                    <!-- LAB 03 -->
-
-                    <article class="tech-card">
-
-                        <span class="project-label">
-                            COMPLETED
-                        </span>
-
-                        <div class="tech-icon">
-                            🔐
-                        </div>
-
-                        <h3>
-                            Service Account
-                        </h3>
-
-                        <p>
-
-                            Understand Cloud Run service
-                            identity and how IAM controls
-                            access to Google Cloud resources.
-
-                        </p>
-
-                    </article>
-
-
-                    <!-- LAB 04 -->
-
-                    <article class="tech-card">
-
-                        <span class="project-label">
-                            NEXT
-                        </span>
-
-                        <div class="tech-icon">
-                            🔄
-                        </div>
-
-                        <h3>
-                            GitHub CI/CD
-                        </h3>
-
-                        <p>
-
-                            Automatically build and deploy
-                            the application whenever code
-                            is pushed to GitHub.
-
-                        </p>
-
-                    </article>
-
-
-                    <!-- LAB 05 -->
-
-                    <article class="tech-card">
-
-                        <span class="project-label">
-                            PLANNED
-                        </span>
-
-                        <div class="tech-icon">
-                            🏗️
-                        </div>
-
-                        <h3>
-                            Terraform
-                        </h3>
-
-                        <p>
-
-                            Create GCP infrastructure using
-                            Infrastructure as Code instead
-                            of manual console configuration.
-
-                        </p>
-
-                    </article>
-
-
-                    <!-- LAB 06 -->
-
-                    <article class="tech-card">
-
-                        <span class="project-label">
-                            PLANNED
-                        </span>
-
-                        <div class="tech-icon">
-                            📈
-                        </div>
-
-                        <h3>
-                            Monitoring
-                        </h3>
-
-                        <p>
-
-                            Explore Cloud Logging,
-                            monitoring, alerts and
-                            troubleshooting.
-
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CLOUD RUN ================= -->
-
-        <section class="projects-preview">
-
-            <div class="container">
-
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        CORE SERVICE
-                    </p>
-
-                    <h2>
-                        Cloud Run
-                    </h2>
-
-                    <p>
-                        The first major GCP service used
-                        in the Omkar Labs environment.
-                    </p>
-
-                </div>
-
-
-                <div class="project-feature">
-
-
-                    <div>
-
-                        <h3>
-                            Why Cloud Run?
-                        </h3>
-
-                        <p>
-
-                            Cloud Run allows containerized
-                            applications to be deployed without
-                            managing traditional virtual machines.
-
-                        </p>
-
-                        <p>
-
-                            Cloud Run provides a unique HTTPS
-                            endpoint for each service and can
-                            automatically scale based on incoming
-                            requests.
-
-                        </p>
-
-                    </div>
-
-
-                    <div>
-
-                        <h3>
-                            Important Concept
-                        </h3>
-
-                        <p>
-
-                            The application container must listen
-                            on the port supplied through the
-                            <strong>PORT</strong> environment
-                            variable.
-
-                        </p>
-
-                        <p>
-
-                            The default Cloud Run container port
-                            is <strong>8080</strong>.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= TROUBLESHOOTING ================= -->
+        <!-- ================= CLOUD RUN CONFIGURATION ================= -->
 
         <section class="technologies">
 
@@ -741,77 +650,214 @@
                 <div class="section-heading">
 
                     <p class="eyebrow">
-                        REAL-WORLD LEARNING
+                        CLOUD RUN LAB
                     </p>
 
+
                     <h2>
-                        Troubleshooting Cloud Run
+                        What I Configured
                     </h2>
 
+
                     <p>
-                        Problems are part of the lab.
-                        Every failure becomes a learning opportunity.
+
+                        Key Cloud Run concepts explored
+                        while deploying Omkar Labs.
+
                     </p>
 
                 </div>
 
 
-                <div class="project-feature">
+
+                <div class="tech-grid">
 
 
-                    <div>
+                    <article class="tech-card">
 
-                        <span class="project-label">
-                            LESSON #001
-                        </span>
+                        <div class="tech-icon">
+                            📦
+                        </div>
 
                         <h3>
-                            Container failed to start
+                            Container Image
                         </h3>
 
                         <p>
 
-                            One of the first Cloud Run challenges
-                            was a container that failed to listen
-                            on port 8080.
+                            Deploying a Docker container
+                            as a Cloud Run service.
 
                         </p>
+
+                    </article>
+
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            🔌
+                        </div>
+
+                        <h3>
+                            Port 8080
+                        </h3>
 
                         <p>
 
-                            This highlighted the importance of
-                            ensuring the application listens on
-                            <strong>0.0.0.0</strong> and the
-                            correct <strong>PORT</strong>.
+                            Cloud Run sends requests to
+                            the container port, defaulting
+                            to 8080.
 
                         </p>
+
+                    </article>
+
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            📈
+                        </div>
+
+                        <h3>
+                            Autoscaling
+                        </h3>
+
+                        <p>
+
+                            Cloud Run can automatically
+                            scale instances according
+                            to incoming traffic.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            💰
+                        </div>
+
+                        <h3>
+                            Cost Control
+                        </h3>
+
+                        <p>
+
+                            Using request-based billing
+                            and scaling from zero helps
+                            keep a low-traffic learning
+                            environment inexpensive.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= COMMANDS ================= -->
+
+        <section class="projects-preview">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        GCP COMMANDS
+                    </p>
+
+
+                    <h2>
+                        Useful Commands
+                    </h2>
+
+                </div>
+
+
+
+                <div class="terminal">
+
+
+                    <div class="terminal-header">
+
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+
+                        <span class="terminal-title">
+                            gcloud
+                        </span>
 
                     </div>
 
 
-                    <div>
-
-                        <span class="project-label">
-                            DEBUGGING
-                        </span>
-
-                        <h3>
-                            Check the logs
-                        </h3>
+                    <div class="terminal-body">
 
                         <p>
-
-                            Cloud Run revision logs are one of
-                            the most important tools for identifying
-                            container startup and application errors.
-
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+                            gcloud auth login
                         </p>
 
-                        <p>
 
-                            The objective is not simply to make
-                            the deployment work, but to understand
-                            why it failed.
+                        <p>
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+                            gcloud projects list
+                        </p>
+
+
+                        <p>
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+                            gcloud config set project PROJECT_ID
+                        </p>
+
+
+                        <p>
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+                            gcloud run services list
+                        </p>
+
+
+                        <p>
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+                            gcloud run services describe SERVICE
+                        </p>
+
+
+                        <p>
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+                            gcloud run services logs read SERVICE
+                        </p>
+
+
+                        <p class="terminal-success">
+
+                            ● GCP Lab Ready
 
                         </p>
 
@@ -824,9 +870,102 @@
         </section>
 
 
-        <!-- ================= ROADMAP ================= -->
 
-        <section class="projects-preview">
+        <!-- ================= FREE TIER ================= -->
+
+        <section class="technologies">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        LEARNING ON A BUDGET
+                    </p>
+
+
+                    <h2>
+                        GCP Free Tier
+                    </h2>
+
+
+                    <p>
+
+                        Omkar Labs is designed to learn
+                        cloud technologies while keeping
+                        infrastructure costs under control.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="project-feature">
+
+
+                    <div>
+
+                        <span class="project-label">
+                            COST AWARENESS
+                        </span>
+
+
+                        <h3>
+                            Start small
+                        </h3>
+
+
+                        <p>
+
+                            Cloud services can generate
+                            charges when usage exceeds
+                            applicable free allowances.
+
+                            Always monitor billing,
+                            quotas and resource usage.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span class="project-label">
+                            CURRENT STRATEGY
+                        </span>
+
+
+                        <h3>
+                            Serverless first
+                        </h3>
+
+
+                        <p>
+
+                            For small learning projects,
+                            serverless services such as
+                            Cloud Run can avoid keeping a
+                            VM running continuously.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= LEARNING ROADMAP ================= -->
+
+        <section class="technologies">
 
             <div class="container">
 
@@ -837,133 +976,78 @@
                         GCP ROADMAP
                     </p>
 
-                    <h2>
-                        What's Next?
-                    </h2>
 
-                    <p>
-                        The GCP lab will gradually evolve into
-                        a complete DevOps environment.
-                    </p>
+                    <h2>
+                        Next Labs
+                    </h2>
 
                 </div>
 
 
-                <div class="tech-grid">
+
+                <div class="project-feature">
 
 
-                    <article class="tech-card">
-
-                        <div class="tech-icon">
-                            01
-                        </div>
+                    <div>
 
                         <h3>
-                            Cloud Run
+                            Phase 1 — Foundation
                         </h3>
 
+
                         <p>
-                            Container deployment,
-                            revisions and scaling.
+
+                            Cloud Run · IAM · Cloud Storage ·
+                            Cloud Logging · Billing
+
                         </p>
 
-                    </article>
+                    </div>
 
 
-                    <article class="tech-card">
 
-                        <div class="tech-icon">
-                            02
-                        </div>
+                    <div>
 
                         <h3>
-                            IAM
+                            Phase 2 — Infrastructure
                         </h3>
 
-                        <p>
-                            Roles, permissions and
-                            service accounts.
-                        </p>
-
-                    </article>
-
-
-                    <article class="tech-card">
-
-                        <div class="tech-icon">
-                            03
-                        </div>
-
-                        <h3>
-                            CI/CD
-                        </h3>
 
                         <p>
-                            GitHub Actions and automated
-                            deployments.
-                        </p>
 
-                    </article>
-
-
-                    <article class="tech-card">
-
-                        <div class="tech-icon">
-                            04
-                        </div>
-
-                        <h3>
+                            VPC · Compute Engine ·
+                            Load Balancing · DNS ·
                             Terraform
-                        </h3>
 
-                        <p>
-                            Infrastructure as Code
-                            for GCP.
                         </p>
 
-                    </article>
+                    </div>
 
 
-                    <article class="tech-card">
 
-                        <div class="tech-icon">
-                            05
-                        </div>
+                    <div>
 
                         <h3>
-                            Kubernetes
+                            Phase 3 — DevOps
                         </h3>
 
-                        <p>
-                            Move from serverless containers
-                            to container orchestration.
-                        </p>
-
-                    </article>
-
-
-                    <article class="tech-card">
-
-                        <div class="tech-icon">
-                            06
-                        </div>
-
-                        <h3>
-                            Security
-                        </h3>
 
                         <p>
-                            Build a secure cloud
-                            infrastructure foundation.
+
+                            Artifact Registry ·
+                            GitHub Actions · CI/CD ·
+                            Kubernetes · Monitoring
+
                         </p>
 
-                    </article>
+                    </div>
 
                 </div>
 
             </div>
 
         </section>
+
 
 
         <!-- ================= CTA ================= -->
@@ -976,21 +1060,26 @@
                     KEEP LEARNING
                 </p>
 
+
                 <h2>
-                    The cloud is the lab.
+                    One cloud lab at a time.
                 </h2>
+
 
                 <p>
 
-                    Every deployment, error and experiment
-                    becomes part of the Omkar Labs journey.
+                    Every GCP experiment becomes
+                    another step toward real-world
+                    Cloud and DevOps experience.
 
                 </p>
 
 
                 <a href="projects.html"
                    class="btn btn-primary">
+
                     View Projects
+
                 </a>
 
             </div>
@@ -999,6 +1088,7 @@
 
 
     </main>
+
 
 
     <!-- ================= FOOTER ================= -->
@@ -1012,14 +1102,18 @@
 
                 <a href="index.html"
                    class="logo">
+
                     OMKAR<span>LABS</span>
+
                 </a>
+
 
                 <p>
                     Learn • Build • Automate
                 </p>
 
             </div>
+
 
 
             <div class="footer-links">
@@ -1042,8 +1136,8 @@
 
             </div>
 
-
         </div>
+
 
 
         <div class="container copyright">
@@ -1058,6 +1152,7 @@
         </div>
 
     </footer>
+
 
 
     <script src="js/script.js"></script>
