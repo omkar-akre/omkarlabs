@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Omkar Labs Docker learning lab - containers, Dockerfiles, images, networking and deployment.">
+
+    <title>Docker | Omkar Labs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                OMKAR<span>LABS</span>
+            </a>
+
+            <nav class="navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="gcp.html">
+                    GCP
+                </a>
+
+                <a href="docker.html"
+                   class="active">
+                    Docker
+                </a>
+
+                <a href="kubernetes.html">
+                    Kubernetes
+                </a>
+
+                <a href="devops.html">
+                    DevOps
+                </a>
+
+                <a href="cybersecurity.html">
+                    Cybersecurity
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <button class="menu-toggle"
+                    aria-label="Open navigation menu">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        CONTAINERIZATION
+                    </p>
+
+                    <h1>
+                        Build once.<br>
+                        <span>Run anywhere.</span>
+                    </h1>
+
+                    <p class="hero-description">
+
+                        Learning how to package applications
+                        into portable, reproducible containers
+                        using Docker.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <a href="#docker-lab"
+                           class="btn btn-primary">
+
+                            Explore Docker Lab
+
+                        </a>
+
+                        <a href="projects.html"
+                           class="btn btn-secondary">
+
+                            View Projects
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- TERMINAL -->
+
+                <div class="terminal">
+
+                    <div class="terminal-header">
+
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+
+                        <span class="terminal-title">
+                            omkar@labs:~/docker
+                        </span>
+
+                    </div>
+
+
+                    <div class="terminal-body">
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker build -t omkarlabs .
+
+                        </p>
+
+
+                        <p class="terminal-output">
+
+                            [+] Building container image...
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker images
+
+                        </p>
+
+
+                        <p class="terminal-output">
+
+                            omkarlabs:latest
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker run -p 8080:8080 omkarlabs
+
+                        </p>
+
+
+                        <p class="terminal-success">
+
+                            ● Container running on port 8080
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            _
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= DOCKER OVERVIEW ================= -->
+
+        <section class="technologies"
+                 id="docker-lab">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        DOCKER LAB
+                    </p>
+
+                    <h2>
+                        What I'm Learning
+                    </h2>
+
+                    <p>
+
+                        Building practical Docker knowledge
+                        through hands-on container projects.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="tech-grid">
+
+
+                    <!-- IMAGES -->
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            📦
+                        </div>
+
+                        <span class="project-label">
+                            CORE
+                        </span>
+
+                        <h3>
+                            Docker Images
+                        </h3>
+
+                        <p>
+
+                            Understanding how application
+                            code and dependencies are packaged
+                            into immutable container images.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- CONTAINERS -->
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            🚢
+                        </div>
+
+                        <span class="project-label">
+                            CORE
+                        </span>
+
+                        <h3>
+                            Containers
+                        </h3>
+
+                        <p>
+
+                            Running isolated application
+                            environments using Docker containers.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- DOCKERFILE -->
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            📄
+                        </div>
+
+                        <span class="project-label">
+                            ACTIVE
+                        </span>
+
+                        <h3>
+                            Dockerfile
+                        </h3>
+
+                        <p>
+
+                            Creating reproducible container
+                            builds using Dockerfiles and
+                            layered images.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- NETWORKING -->
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            🌐
+                        </div>
+
+                        <span class="project-label">
+                            LEARNING
+                        </span>
+
+                        <h3>
+                            Docker Networking
+                        </h3>
+
+                        <p>
+
+                            Understanding ports, bridge
+                            networks, container communication
+                            and service connectivity.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- VOLUMES -->
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            💾
+                        </div>
+
+                        <span class="project-label">
+                            LEARNING
+                        </span>
+
+                        <h3>
+                            Volumes
+                        </h3>
+
+                        <p>
+
+                            Learning how persistent application
+                            data can be stored outside the
+                            container lifecycle.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <!-- REGISTRY -->
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            🗃️
+                        </div>
+
+                        <span class="project-label">
+                            NEXT
+                        </span>
+
+                        <h3>
+                            Container Registry
+                        </h3>
+
+                        <p>
+
+                            Publishing Docker images to
+                            registries such as Google
+                            Artifact Registry.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= REAL PROJECT ================= -->
+
+        <section class="projects-preview">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        REAL-WORLD PROJECT
+                    </p>
+
+                    <h2>
+                        Containerizing Omkar Labs
+                    </h2>
+
+                    <p>
+
+                        The Omkar Labs website is being used
+                        as a practical Docker learning project.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="project-feature">
+
+
+                    <div>
+
+                        <span class="project-label">
+                            PROJECT #001
+                        </span>
+
+                        <h3>
+                            Omkar Labs Docker Container
+                        </h3>
+
+                        <p>
+
+                            The static website is packaged
+                            into a Docker image and served
+                            using Nginx.
+
+                        </p>
+
+                        <p>
+
+                            The same container can then be
+                            tested locally before being
+                            deployed to Google Cloud Run.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="project-flow">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                        <span>
+                            Nginx
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                        <span>
+                            Docker
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+
+                        <span>
+                            Cloud Run
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= DOCKERFILE ================= -->
+
+        <section class="projects-preview">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        DOCKERFILE
+                    </p>
+
+                    <h2>
+                        Current Container Setup
+                    </h2>
+
+                    <p>
+
+                        A simple Nginx-based container
+                        suitable for the Omkar Labs static site.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="terminal">
+
+
+                    <div class="terminal-header">
+
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+
+                        <span class="terminal-title">
+                            Dockerfile
+                        </span>
+
+                    </div>
+
+
+                    <div class="terminal-body">
+
+                        <p>
+                            FROM nginx:alpine
+                        </p>
+
+                        <p>
+                            COPY . /usr/share/nginx/html
+                        </p>
+
+                        <p>
+                            EXPOSE 8080
+                        </p>
+
+                        <p>
+                            CMD ["nginx", "-g", "daemon off;"]
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= DOCKER WORKFLOW ================= -->
+
+        <section class="technologies">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        CONTAINER WORKFLOW
+                    </p>
+
+                    <h2>
+                        Build → Test → Deploy
+                    </h2>
+
+                </div>
+
+
+
+                <div class="tech-grid">
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            01
+                        </div>
+
+                        <h3>
+                            Build
+                        </h3>
+
+                        <p>
+
+                            Create a Docker image from the
+                            application source code and
+                            Dockerfile.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            02
+                        </div>
+
+                        <h3>
+                            Run
+                        </h3>
+
+                        <p>
+
+                            Start the container locally
+                            and verify application behaviour.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            03
+                        </div>
+
+                        <h3>
+                            Test
+                        </h3>
+
+                        <p>
+
+                            Check HTTP connectivity,
+                            ports, logs and application
+                            health.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            04
+                        </div>
+
+                        <h3>
+                            Push
+                        </h3>
+
+                        <p>
+
+                            Push the container image to
+                            a container registry.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            05
+                        </div>
+
+                        <h3>
+                            Deploy
+                        </h3>
+
+                        <p>
+
+                            Deploy the container to
+                            Google Cloud Run.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="tech-card">
+
+                        <div class="tech-icon">
+                            06
+                        </div>
+
+                        <h3>
+                            Monitor
+                        </h3>
+
+                        <p>
+
+                            Monitor logs, traffic,
+                            revisions and resource usage.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= COMMANDS ================= -->
+
+        <section class="projects-preview">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        DOCKER CLI
+                    </p>
+
+                    <h2>
+                        Essential Commands
+                    </h2>
+
+                </div>
+
+
+
+                <div class="terminal">
+
+
+                    <div class="terminal-header">
+
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+
+                        <span class="terminal-title">
+                            docker
+                        </span>
+
+                    </div>
+
+
+                    <div class="terminal-body">
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker --version
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker build -t omkarlabs .
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker images
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker run -p 8080:8080 omkarlabs
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker ps
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker logs CONTAINER_ID
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker stop CONTAINER_ID
+
+                        </p>
+
+
+                        <p>
+
+                            <span class="terminal-prompt">
+                                $
+                            </span>
+
+                            docker rm CONTAINER_ID
+
+                        </p>
+
+
+                        <p class="terminal-success">
+
+                            ● Docker Lab Ready
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= DOCKER VS VM ================= -->
+
+        <section class="technologies">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        CONTAINER CONCEPTS
+                    </p>
+
+                    <h2>
+                        Docker vs Virtual Machines
+                    </h2>
+
+                </div>
+
+
+
+                <div class="project-feature">
+
+
+                    <div>
+
+                        <span class="project-label">
+                            DOCKER
+                        </span>
+
+                        <h3>
+                            Containers
+                        </h3>
+
+                        <p>
+
+                            Containers share the host
+                            operating system kernel and
+                            package only the application
+                            and its dependencies.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <span class="project-label">
+                            VM
+                        </span>
+
+                        <h3>
+                            Virtual Machines
+                        </h3>
+
+                        <p>
+
+                            Virtual machines include a
+                            complete guest operating system
+                            on top of virtualized hardware.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= LEARNING ROADMAP ================= -->
+
+        <section class="technologies">
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        DOCKER ROADMAP
+                    </p>
+
+                    <h2>
+                        Next Labs
+                    </h2>
+
+                </div>
+
+
+
+                <div class="project-feature">
+
+
+                    <div>
+
+                        <h3>
+                            Phase 1 — Fundamentals
+                        </h3>
+
+                        <p>
+
+                            Images · Containers · Dockerfile ·
+                            Ports · Logs · Volumes
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <h3>
+                            Phase 2 — Advanced Docker
+                        </h3>
+
+                        <p>
+
+                            Docker Compose · Networks ·
+                            Multi-stage builds ·
+                            Image optimisation
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div>
+
+                        <h3>
+                            Phase 3 — Cloud
+                        </h3>
+
+                        <p>
+
+                            Artifact Registry · Cloud Run ·
+                            CI/CD · GitHub Actions ·
+                            Kubernetes
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    KEEP BUILDING
+                </p>
+
+                <h2>
+                    Containers are the foundation.
+                </h2>
+
+                <p>
+
+                    Learn Docker today.
+                    Deploy to the cloud tomorrow.
+
+                </p>
+
+                <a href="gcp.html"
+                   class="btn btn-primary">
+
+                    Explore GCP
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+
+            <div>
+
+                <a href="index.html"
+                   class="logo">
+
+                    OMKAR<span>LABS</span>
+
+                </a>
+
+                <p>
+                    Learn • Build • Automate
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="gcp.html">
+                    GCP
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container copyright">
+
+            <p>
+
+                © 2026 Omkar Labs. Built with curiosity,
+                code and continuous learning.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
